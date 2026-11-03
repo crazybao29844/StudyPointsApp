@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvTrendTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_dark"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- 左右移动 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/btnTrendPrev"
+            android:layout_width="44dp"
+            android:layout_height="36dp"
+            android:backgroundTint="@color/teal"
+            android:text="◀"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/tvTrendRange"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/text_gray"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnTrendNext"
+            android:layout_width="44dp"
+            android:layout_height="36dp"
+            android:backgroundTint="@color/teal"
+            android:text="▶"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="显示数量："
+        android:textColor="@color/text_gray"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp">
+
+        <Button
+            android:id="@+id/btnRange1"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:backgroundTint="#B0BEC5"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/btnRange2"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="#2E9E6B"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/btnRange3"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="#B0BEC5"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <com.example.studypoints.TrendChartView
+        android:id="@+id/trendChart"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_marginTop="6dp" />
+
+    <Button
+        android:id="@+id/btnCloseTrend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#94A3B8"
+        android:text="关闭"
+        android:textColor="#FFFFFF" />
+</LinearLayout>

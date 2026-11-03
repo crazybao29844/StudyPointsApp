@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加积分类别"
+        android:textColor="@color/text_dark"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etCatName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="积分名称，例如：阅读"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="这个积分要显示在哪些地方："
+        android:textColor="@color/text_gray"
+        android:textSize="12sp" />
+
+    <CheckBox
+        android:id="@+id/cbCatDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="数据总览（年/月/周统计 + 趋势图）" />
+
+    <CheckBox
+        android:id="@+id/cbCatBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="底部显示（近 7 天日均 + 累计）" />
+
+    <CheckBox
+        android:id="@+id/cbCatCalendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="日历显示（日期下方 / 追加该类积分）" />
+
+    <CheckBox
+        android:id="@+id/cbCatCheckbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="可添加勾选项（像睡眠/饮食/运动那样，长按可设分值）" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+
+        <Button
+            android:id="@+id/btnCatCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#94A3B8"
+            android:text="取消"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnCatConfirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#7C3AED"
+            android:text="确定"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</LinearLayout>

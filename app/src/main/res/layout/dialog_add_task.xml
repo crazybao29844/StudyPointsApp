@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加待办"
+        android:textColor="@color/text_dark"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etTaskName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="待办内容，例如：复习电机学第 3 章"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="放到哪个象限"
+        android:textColor="@color/text_gray"
+        android:textSize="13sp" />
+
+    <RadioGroup
+        android:id="@+id/rgQuadrant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp">
+
+        <RadioButton
+            android:id="@+id/rbQ1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="① 重要且紧急" />
+
+        <RadioButton
+            android:id="@+id/rbQ2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="② 重要不紧急" />
+
+        <RadioButton
+            android:id="@+id/rbQ3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="③ 紧急不重要" />
+
+        <RadioButton
+            android:id="@+id/rbQ4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="④ 不重要不紧急" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/btnLinkDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#7C3AED"
+            android:text="链接到日期"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvLinkedDates"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:text="未链接日期"
+            android:textColor="@color/text_gray"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+
+        <Button
+            android:id="@+id/btnCancelTask"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#94A3B8"
+            android:text="取消"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnConfirmTask"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/teal"
+            android:text="添加"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</LinearLayout>

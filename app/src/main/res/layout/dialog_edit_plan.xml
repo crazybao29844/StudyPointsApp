@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvEditPlanTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="编辑规划"
+        android:textColor="@color/text_dark"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="点「+ 插入待办」把四象限项目嵌进来；嵌入项显示为 [[项目名]]，保存后显示为项目名，点项目名可勾选划线"
+        android:textColor="@color/text_gray"
+        android:textSize="11sp" />
+
+    <EditText
+        android:id="@+id/etPlanText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="top"
+        android:hint="输入规划内容…"
+        android:inputType="textMultiLine"
+        android:maxLines="8"
+        android:minLines="4" />
+
+    <Button
+        android:id="@+id/btnInsertTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#FFB74D"
+        android:text="+ 插入待办"
+        android:textColor="#4A2C00"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btnCancelPlan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#94A3B8"
+            android:text="取消"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnSavePlan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/teal"
+            android:text="保存"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</LinearLayout>
